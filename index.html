@@ -36,64 +36,92 @@
       text-decoration: none;
       border-radius: 5px;
     }
-    .box, .form, .repair {
+    .box, .form, .reviews, .repair {
       border: 2px solid blue;
       background-color: lightyellow;
       padding: 20px;
       margin-top: 30px;
     }
+    .contact {
+      margin-top: 30px;
+      font-weight: bold;
+    }
     input, textarea {
+      display: block;
+      margin-top: 10px;
       width: 100%;
       padding: 10px;
-      margin-top: 10px;
       border-radius: 5px;
       border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
 
   <h1>Mai Babban Suna Communication</h1>
-  <p>Muna siyar da London used keypad da original Android phones. Duk waya da kuka siya, za a kawo muku har inda kuke kyauta!</p>
+  <p>Muna siyar da sabbin waya, tondon used keypad, da kuma original Androids. Duk wayar da kuka siya za'a kawo muku har gida kyauta!</p>
 
   <!-- Redmi A5 -->
   <div class="product">
     <img src="https://i.ibb.co/Zz5rgxCq/download-3.jpg" alt="Redmi A5">
     <h3>Redmi A5 (New Release)</h3>
-    <p>64GB da 128GB - Duka kasa da ₦120,000</p>
-    <p>Wayar zamani mai kyau, mai ƙarfi, da arha!</p>
+    <p>64GB da 128GB duka kasa da ₦120,000</p>
+    <p>Sabuwar waya mai kyau da arha. Cikakken sabuntawa daga Redmi.</p>
     <a href="https://wa.me/2349161238004" class="btn">Saya ta WhatsApp</a>
   </div>
 
-  <!-- Tuntuɓi Mu -->
+  <!-- Tondon Used Keypad -->
+  <div class="product">
+    <h3>Keypad Phones (London Used)</h3>
+    <p>Farashi: Rahusa</p>
+    <p>Wayoyi masu juriya da batirin da ke dawwama. Muna da nau'o'in daban-daban.</p>
+    <a href="https://wa.me/2349161238004" class="btn">Tuntube Mu</a>
+  </div>
+
+  <!-- Original Androids -->
+  <div class="product">
+    <h3>Original Android Phones</h3>
+    <p>Farashi: Gwanin Sha'awa</p>
+    <p>Wayoyin zamani masu kyau da saukin farashi. Akwai sabbi da fairly used.</p>
+    <a href="https://wa.me/2349161238004" class="btn">Duba Wayoyi</a>
+  </div>
+
+  <!-- Contact Box -->
   <div class="box">
     <h2>Tuntuɓi Mu</h2>
-    <p>Lamba: 09161238004</p>
-    <p>Email: muhammadaminu4424@gmail.com</p>
-    <a href="https://wa.me/2349161238004" class="btn">Tura Saƙo ta WhatsApp</a>
+    <p>Tura saƙo ta WhatsApp ko kira lambar mu kai tsaye:</p>
+    <a href="https://wa.me/2349161238004" class="btn">WhatsApp</a>
+    <p class="contact">Lambar waya: 09161238004</p>
   </div>
 
   <!-- Order Form -->
   <div class="form">
     <h2>Yi Odarka Yanzu</h2>
     <form action="https://formsubmit.co/muhammadaminu4424@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
       <label>Sunan ka:</label>
-      <input type="text" name="name" required>
+      <input type="text" name="name" required placeholder="Shigar da sunanka">
       <label>Lambar waya:</label>
-      <input type="tel" name="phone" required>
+      <input type="tel" name="phone" required placeholder="Shigar da lambar waya">
       <label>Wace waya kake so?</label>
-      <input type="text" name="product" required>
-      <label>Sako:</label>
-      <textarea name="message" rows="4"></textarea>
+      <input type="text" name="product" placeholder="Misali: Redmi A5 128GB">
+      <label>Sako ko bayani:</label>
+      <textarea name="message" rows="4" placeholder="Rubuta saƙonka a nan..."></textarea>
       <button type="submit" class="btn">Tura</button>
     </form>
   </div>
 
-  <!-- Gyaran waya -->
-  <div class="repair">
-    <h2>Gyaran Waya</h2>
-    <p>Muna gyaran wayoyin Android da Keypad, da canjin screen da spare parts. Aiko mana da wayarka domin gyara cikin aminci.</p>
+  <!-- Reviews -->
+  <div class="reviews">
+    <h2>Ra'ayoyin Masu Sayi</h2>
+    <textarea rows="3" placeholder="Fadi ra'ayinka..."></textarea>
+    <button class="btn">Tura Ra'ayi</button>
   </div>
 
-</body>
-</html>
+  <!-- Sabis na Gyaran Waya -->
+  <div class="repair">
+    <h2>Sabis na Gyaran Waya</h2>
+    <p>Muna gyaran wayoyin hannu na Android da Keypad. Muna canza screens da sayar da spare parts. Za'a iya turo da waya
